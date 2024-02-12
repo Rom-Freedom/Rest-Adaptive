@@ -55,9 +55,9 @@ header {
     font-size: 1.1rem;
     font-weight: 500;    
 }
-/* .navbar li:not(:last-child) {
+.navbar li:not(:last-child) {
     margin-right: 20px;
-} */
+}
 .navbar a:hover {
     color: var(--main-color);
     transition: .45s;
