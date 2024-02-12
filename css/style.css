@@ -55,9 +55,9 @@ header {
     font-size: 1.1rem;
     font-weight: 500;    
 }
-.navbar li:not(:last-child) {
+/* .navbar li:not(:last-child) {
     margin-right: 20px;
-}
+} */
 .navbar a:hover {
     color: var(--main-color);
     transition: .45s;
@@ -238,10 +238,6 @@ section {
 /* /Call To Action Section*/
 
 /* Footer Section */
-.footer {
-    background: #3a1607;
-}
-
 .main {
     display: flex;
     flex-wrap: wrap;
@@ -304,3 +300,71 @@ section {
     background-color: var(--text-color);
 }
 /* .Footer Section */
+
+@media (max-width: 1560px) {
+    header {
+        padding: 15px 40px;
+    }
+    :root {
+        --big-font: 3.5rem;
+        --h2-font: 2rem;
+    }
+}
+
+@media (max-width: 1140px) {
+    section {
+        padding: 50px 8%;
+    }
+    #menu-icon {
+        display: initial;
+        color: var(--text-color);
+    }
+    header .navbar {
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: #2b2640;
+        transition: .3s;
+    }
+    header .navbar.active {
+        top: 70px;
+    }
+    .navbar a {
+        padding: 1.5rem;
+        display: block;
+    }
+    .col {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        padding: 10px 16px;
+    }
+    .home {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about-img {
+        order: 2;
+    }
+    section {
+        padding: 100px 7%;
+    }
+}
+
+@media (max-width: 575px) {
+    .col {
+        width: 100%;
+    }
+}
